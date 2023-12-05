@@ -67,6 +67,8 @@ print(page2.headers['Content-Type'])
 
 #как работать с json
 print("_________________________________________________________________________________")
-page3=requests.get("https://jsonplaceholder.typicode.com/post") #сайт позволяющий работать с фейковым rest api
-print(page3.headers)
-print(page3.headers['Content-Type'])
+page3=requests.get("https://jsonplaceholder.typicode.com/posts/1") #сайт позволяющий работать с фейковым rest api
+print(page3.text)
+data = page3.json()
+print(data)
+print(data['title'])
