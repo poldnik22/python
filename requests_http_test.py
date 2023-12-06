@@ -1,6 +1,6 @@
 """
 
-HTTP
+Lessons for video https://www.youtube.com/watch?v=tTnquxuOUxc
 
 """
 import requests
